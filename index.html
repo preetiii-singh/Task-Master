@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> task manager application</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="task-container">
+        <div class="task">
+          <div class="task-header">
+            <h2>Task 1</h2>
+            <button class="delete-task">X</button>
+          </div>
+          <div class="task-body">
+            <p>Description of task 1</p>
+            <p>Due date: 01/01/2024</p>
+            <button class="edit-task">Edit</button>
+          </div>
+        </div>
+        <div class="task">
+          <div class="task-header">
+            <h2>Task 2</h2>
+            <button class="delete-task">X</button>
+          </div>
+          <div class="task-body">
+            <p>Description of task 2</p>
+            <p>Due date: 01/02/2024</p>
+            <button class="edit-task">Edit</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="add-task-container">
+        <h2>Add Task</h2>
+        <form>
+          <label for="task-name">Task Name:</label>
+          <input type="text" id="task-name" name="task-name">
+          <label for="task-description">Task Description:</label>
+          <textarea id="task-description" name="task-description"></textarea>
+          <label for="due-date">Due Date:</label>
+          <input type="date" id="due-date" name="due-date">
+          <button type="submit">Add Task</button>
+        </form>
+      </div>
+      
+      <div class="task-list-container">
+        <h2>Task List</h2>
+        <ul class="task-list"></ul>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html>
